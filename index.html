@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonsive</title>
+       <script src="https://cdn.tailwindcss.com"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+        <img class="object-cover max-w-12 max-h-12 rounded-full" src="./images/img0.png" alt="log">
+        <span class="text-lg font-medium  "><p class="italic font-family: monospace;">Niaz Hussain</p></span>
+     </a>
+<div id="nav-menu" class="hidden md:flex gap-12">
+  <a href="#" class="font-medium hover:bg-blue-800  hover:text-white px-4 py-2 rounded-full">Home</a>
+  <a href="#" class="font-medium hover:bg-blue-800  hover:text-white px-4 py-2 rounded-full">About</a>
+  <a href="#" class="font-medium hover:bg-blue-800  hover:text-white px-4 py-2 rounded-full">Services</a>
+  <a href="#" class="font-medium hover:bg-blue-800  hover:text-white px-4 py-2 rounded-full">Contact</a>
+</div>
+    <div class="hidden md:flex gap-2 items-center text-bold font-medium bg-slate-200 border-1 border-blue-700 text-black-700  px-4 py-2 rounded-full hover:bg-yellow-500 hover:text-white transition">
+        <span><i class="fa-solid fa-user"></i>log in</span>
+    </div>
+
+     <div class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-2xl text-gray-700"></i>
+     </div>
+     <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+        <div id="nav-bar" class="flex justify-between">
+             <a href="#" id="brand" class="flex gap-2 items-center">
+        <img class="object-cover max-w-12 max-h-12 rounded-full" src="./images/img0.png" alt="log">
+        <span class="text-lg font-medium  "><p class="italic font-family: monospace;">Niaz Hussain</p></span>
+     </a>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-square-xmark text-2xl text-gray-700"></i>
+     </button>
+        </div>
+        <div class="mt-6">
+    <a href="#" class="block font-medium my-4 text-center hover:bg-blue-700 hover:text-white px-4 py-2 rounded-full">Home</a>
+    <a href="#" class="block font-medium my-4 text-center hover:bg-blue-700 hover:text-white px-4 py-2 rounded-full">About</a>
+    <a href="#" class="block font-medium my-4 text-center hover:bg-blue-700 hover:text-white px-4 py-2 rounded-full">Services</a>
+    <a href="#" class="block font-medium my-4 text-center hover:bg-blue-700 hover:text-white px-4 py-2 rounded-full">Contact</a>
+        </div>
+        <hr>
+        <button class="w-full mt-6 gap-2 items-center text-bold font-medium bg-slate-200 border-1 border-blue-700 text-black-700  px-4 py-2 rounded-full hover:bg-yellow-500 hover:text-blue-700 transition">
+        <span><i class="fa-solid fa-user"></i>log in</span></button>
+     </div>
+    </nav>
+    <hr class="bg-red-800 marker:black h-0.5">
+
+    <main class=" min-h-screen p-6 md:p-12">
+        <h1 class="text-3xl font-bold mb-6">Welcome to My Responsive Website</h1>
+        <img src="/images/img2.png" class="w-full h-64 md:h-96"  alt="">
+
+    <div class=" companies-lines-grid mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-white max-w-7xl mx-auto ">
+
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition ">
+            <img src="/images/img3.png" alt="Company 1" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Google</span>
+        </div>
+       <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img22.png" alt="Company 1" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">linkden</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img4.png" alt="Company 2" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Apple</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img5.png" alt="Company 3" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Microsoft</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img6.png" alt="Company 4" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Amazon</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img7.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">payPal</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img21.png" alt="Company 1" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Spotify</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img8.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Facebook</span>
+        </div>
+
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img10.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Samsung</span>
+        </div>
+
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img12.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Netflix</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img15.png" alt="Company 1" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Uber</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img16.png" alt="Company 1" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Airbnb</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img17.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Pepsi</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img18.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">McDonald’s</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img19.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Toyota</span>
+        </div>
+        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-gradient-to-r from-blue-600 to-purple-200 rounded-xl border border-gray-200 hover:scale-105 transition">
+            <img src="/images/img20.png" alt="Company 5" class="max-h-12">
+            <span class="text-[12px] md:text-[16px] font-semibold">Zoom</span>
+        </div>
+    </div>
+    <!-- step2 -->
+
+    <div class="px-6 py-12 max max-w-7xl mt- 16 mx-auto lg:px-8 lg:mt-24">
+        <h2 class="text-5xl sm:font-semibold mb-14 text-white">How it Work</h2>
+        <div class=" flex flex-col lg:flex-row gap-12 bg-white bg-gradient-to-r from-blue-100 to-purple-500  ">
+            <div class="flex flex-col gap-6">
+                <span class="border border-yellow-300 bg-yellow-500 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium">Step 1</span>
+                <h1 class="font-samibold font-bold">NEXSKILL Launches Google Scholarship Program In Collaboration with TechValley Pakistan & PITB</h1>
+                <p>We are thrilled to announce the NEXSKILL Google Scholarship Program, a unique opportunity for young individuals to enhance their skills and advance their careers. Through our collaboration with TechValley Pakistan and PITB, we are offering FREE Google certifications in high-demand fields.</p>
+                <ul class="grid grid-cols-2 gap-2  text-white font-semibold">
+                    <li class="flex gap-4 bg-blue-500 w-fit rounded-lg px-4 py-2">
+                        <i class="fa-brands fa-google pt-2 text-white"></i>
+                        <a class="text-lg font-light border-b border-yellow-300 border-opacity-30 hover:border-opacity-80" href="">Google Digital Marketing </a>
+
+                    </li>
+                    <li class="flex gap-4 bg-blue-600 w-fit rounded-lg px-4 py-2">
+                        <i class="fa-brands fa-facebook pt-2 text-white"></i>
+                        <a class="text-lg font-light border-b border-yellow-300 border-opacity-30 hover:border-opacity-80" href="">Facebook Digital Marketing </a>
+
+                    </li>
+                    <li class="flex gap-4 bg-red-500 w-fit rounded-lg px-4 py-2">
+                        <i class="fa-brands fa-youtube pt-2 text-white"></i>
+                        <a class="text-lg font-light border-b border-yellow-300 border-opacity-30 hover:border-opacity-80" href="">YouTube Digital Marketing </a>
+
+                    </li>
+                    <li class="flex gap-4 bg-gray-500 w-fit rounded-lg px-4 py-2">
+                        <i class="fa-brands fa-linkedin pt-2 text-white"></i>
+                        <a class="text-lg font-light border-b border-yellow-300 border-opacity-30 hover:border-opacity-80" href="">LinkedIn Digital Marketing </a>
+
+                    </li>
+                    <li class="flex gap-4 bg-red-400 w-fit rounded-lg px-4 py-2">
+                        <i class="fa-brands fa-instagram pt-2 text-white"></i>
+                        <a class="text-lg font-light border-b border-yellow-300 border-opacity-30 hover:border-opacity-80" href="">Instagram Digital Marketing </a>
+
+                    </li>
+                    <li class="flex gap-4 bg-green-500 w-fit rounded-lg px-4 py-2">
+                        <i class="fa-brands fa-whatsapp pt-2 text-white"></i>
+                        <a class="text-lg font-light border-b border-yellow-300 border-opacity-30 hover:border-opacity-80" href="">WhatsApp Digital Marketing </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-12">
+                <img class="rounded-full"  src="/images/img23.png" alt="">
+            </div>
+        </div>
+    </div>
+        <div class="container">
+
+            <h2 class="text-5xl sm:font-semibold mt-12">Free Animation & Gaming Training – Sindh Domicile</h2>
+            <hr class="bg-red-800 marker:black h-0.5 mt-0 mb-2">
+            <div class="pt-10 ">
+            <img class="w-full h-64 md:h-96 rounded-xl shadow-xl shadow-indigo-500/50" src="/images/img28.png" alt="">
+            </div>
+
+
+            <div class="rounded-xl border flex flex-col lg:flex-row items-end">
+                <div class="flex flex-col gap-12 p-8">
+                    <p class="flex font-bold">NeXskill</p>
+                    <h3 class="text-xl leading-relaxed">Be Productive presented Free Training in Gaming & Animation, powered by the Government of Sindh and Sukkur IBA University. This initiative aims to equip youth with skills for successful careers in the animation and gaming industries.</h3>
+                    <div class="flex gap-3 flex-wrap">
+                        <div class="flex gap-2 items-center justify-center bg-yellow-100 w-fit border border-yellow-100 px-3 py-1 rounded-md text-yellow-800 font-medium">
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Free Training</span>
+
+                        </div>
+                         <div class="flex gap-2 items-center justify-center bg-yellow-100 w-fit border border-yellow-100 px-3 py-1 rounded-md text-yellow-800 font-medium">
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Only Sindh domicile holders could apply</span>
+
+                        </div>
+                         <div class="flex gap-2 items-center justify-center bg-yellow-100 w-fit border border-yellow-100 px-3 py-1 rounded-md text-yellow-800 font-medium">
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Nexskill’s execution partner: IBA Sukkur</span>
+                    </div>
+                     <div class="flex gap-2 items-center justify-center bg-yellow-100 w-fit border border-yellow-100 px-3 py-1 rounded-md text-yellow-800 font-medium">
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Training locations: Karachi and Hyderabad</span>
+                         </div>
+                         <p class="text-lg font-light" >Right To Play <span class="text-black font-medium">partnered with Nexskill</span> IT Trainings to launch a women empowerment project aimed at equipping young females with <span class="text-black font-medium">essential digital skills</span>. The program offers free training that helps <span class="text-black font-medium"> participants build confidence</span>, gain professional competencies, and move toward economic independence</p>
+                         <div class="flex gap-4">
+                            <div class="w-12">
+                                <img class="rounded-full" src="/images/img27.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="font-bold">Niaz Hussain</h3>
+                                <p class="text-sm text-gray-500">CEO, Right To Play</p>
+                            </div>
+
+                         </div>
+                </div>
+            </div>
+                <div class=" mb-12 mt-0 lg:h-96 lg:w-1/2 lg:ml-12 pr-0 lg:pt-0 pt-6">
+                    <img src="/images/img25.png" class=" w-full h-full rounded-xl shadow-xl shadow-indigo-500/50" alt="">
+
+                </div>
+        </div>
+        </div>
+       <!-- step4 -->
+        <div class="container">
+            <h2 class="text-5xl  leading-normal sm:font-semibold max-w-2xl">Chose Your Preferred Training Program</h2>
+            <div class="flex flex-col lg:flex-row mt-6 gap-6">
+                <div class="border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 bg-gray-50 hover:bg-gradient-to-r from-blue-300 to-yellow-200">
+                    <h3 class="text-4xl">Web Development with AI Bootcamp</h3>
+                    <p>Web Development with AI Bootcamp <br>skills in web development and artificial intelligence.</p>
+                    <p class="uppercase">key Fratures</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Full Stack Development</span>
+                        </li>
+                         <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Career Support</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Certificate of Completion</span>
+                        </li>
+                    </ul>
+                    <button class="border px-8 py-3 text-primary rounded-lg hover:border-red-800 font-display hover:bg-blue-600  font-medium">Enroll Now</button>
+
+
+                </div>
+                <div class="border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 bg-gray-50 hover:bg-gradient-to-r from-blue-300 to-yellow-200">
+                    <h3 class="text-4xl">Personal Grooming & Speaking Skills</h3>
+                    <p>This program  grooming and public <br>speaking skills, essential for professional <br> development and confidence.</p>
+                    <p class="uppercase">key Fratures</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Personal Grooming & Speaking Skills</span>
+
+                        </li>
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Self-Assessment & Reflection</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Structure of Good Speech</span>
+                        </li>
+                    </ul>
+                    <button class="border px-8 py-3 text-primary rounded-lg hover:border-red-800 font-display hover:bg-blue-600  font-medium">Enroll Now</button></div>
+
+
+                <div class="border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 bg-gray-50 hover:bg-gradient-to-r from-blue-300 to-yellow-200">
+                    <h3 class="text-4xl">Graphic Designing with AI Bootcamp</h3>
+                    <p>Graphic Designing with AI Bootcamp<br>skills in graphic design and artificial intelligence.</p>
+                    <p class="uppercase">key Fratures</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Full Stack Development</span>
+
+                        </li>
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">Photoshop & Illustrator</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                         <i class="fa-solid fa-check text-gray-500"></i>
+                         <span class="text-lg font-medium text-black">UI/UX Design</span>
+                        </li>
+                    </ul>
+                    <button class="border px-8 py-3 text-primary rounded-lg hover:border-red-800 font-display hover:bg-blue-600 font-medium">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- step4end -->
+
+        <!-- step5 -->
+         <div class="container">
+            <h2 class="text-5xl  leading-normal sm:font-semibold max-w-2xl">FAQs</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6">
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 mt-6">
+                    <dt class="flex justify-between items-center" area-controls=faq-1>
+                        <p class="font-semibold text-lg">Nexskill’s for Students</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                        <p class="mt-4 text-gray-500">Nexskill’s for Students is a comprehensive program designed to equip students with essential skills and knowledge for success in the modern world. It offers a wide range of courses and resources covering various subjects, including technology, digital literacy, career development, and more. The program aims to empower students with practical skills that can enhance their academic performance and prepare them for future careers.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 mt-6">
+                    <dt class="flex justify-between items-center" area-controls=faq-1>
+                        <p class="font-semibold text-lg">Nexskill’s for Students</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                        <p class="mt-4 text-gray-500">Nexskill’s for Students is a comprehensive program designed to equip students with essential skills and knowledge for success in the modern world. It offers a wide range of courses and resources covering various subjects, including technology, digital literacy, career development, and more. The program aims to empower students with practical skills that can enhance their academic performance and prepare them for future careers.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 mt-6">
+                    <dt class="flex justify-between items-center" area-controls=faq-1>
+                        <p class="font-semibold text-lg">Nexskill’s for Students</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                        <p class="mt-4 text-gray-500">Nexskill’s for Students is a comprehensive program designed to equip students with essential skills and knowledge for success in the modern world. It offers a wide range of courses and resources covering various subjects, including technology, digital literacy, career development, and more. The program aims to empower students with practical skills that can enhance their academic performance and prepare them for future careers.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 mt-6">
+                    <dt class="flex justify-between items-center" area-controls=faq-1>
+                        <p class="font-semibold text-lg">Nexskill’s for Students</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                        <p class="mt-4 text-gray-500">Nexskill’s for Students is a comprehensive program designed to equip students with essential skills and knowledge for success in the modern world. It offers a wide range of courses and resources covering various subjects, including technology, digital literacy, career development, and more. The program aims to empower students with practical skills that can enhance their academic performance and prepare them for future careers.</p>
+                    </dd>
+                </div>
+            </div>
+         </div>
+          </main>
+         <!-- step5end -->
+
+            <!-- step6 -->
+             <footer class="container-fluid">
+                <div class="rounded-lg border  text-white bg-gray-600 flex flex-col lg:flex-row-reverse items-center mt-12 px-8 py-12 gap-8">
+                    <a href="#" class="font-light font-display italic">Documentation</a>
+                    <div class="flex gap-8 text-lg">
+                          <a href="" class="text-white hover:text-gray-300"><i class="fa-brands fa-facebook"></i></a>
+                         <a href="" class="text-white hover:text-gray-300"><i class="fa-brands fa-x-twitter"></i></a>
+                          <a href="" class="text-white hover:text-gray-300"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                      <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+                      <img class="object-cover max-w-12 max-h-12 rounded-full" src="./images/img0.png" alt="log">
+                      <span class="text-lg font-medium  "><p class="italic font-family: monospace;">Niaz Hussain</p></span>
+                    </a>
+                </div>
+                <div class="flex flex-col items-center justify-center my-12 gap-2">
+                    <div class="flex flex-col gap-2 items-center">
+                        <img class="w-4 h-4" src="/images/img11.png" alt="">
+                        <p class="font-light">Pakistan's #1 IT Institute</p>
+                        <p class="font-light">© 2026 Nexskill. All rights reserved.</p>
+                        <p class="font-light">Version 3.0.0</p>
+                    </div>
+                </div>
+             </footer>
+
+           <!-- step6end -->
+
+</body>
+<script src="script.js"></script>
+</html>
